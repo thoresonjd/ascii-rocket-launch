@@ -40,7 +40,7 @@ const int COLS = 60;   // Width of screen
 void initScreen() {
 	std::string mode = "mode con cols=" + std::to_string(COLS) + " lines=" + std::to_string(ROWS);
 	system(mode.c_str()); // Set num cols and rows for window
-	system("color 0a");	  // Set color of window and text
+	system("color 0a");   // Set color of window and text
 }
 
 void countDown() {
