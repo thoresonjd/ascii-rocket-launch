@@ -20,7 +20,7 @@
 #include <chrono>
 
 // ASCII rocket art
-const char* rocket = "\
+const char* ROCKET = "\
       | \n\
      / \\\n\
     / _ \\\n\
@@ -56,7 +56,7 @@ void takeoff() {
 		system("cls");
 		for (int j = i - HEIGHT; j > 0; j--)
 			std::printf("\n");
-		std::printf(rocket);
+		std::printf(ROCKET);
 		std::this_thread::sleep_for(std::chrono::milliseconds(10));
 	}
 }
