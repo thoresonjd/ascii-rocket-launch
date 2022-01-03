@@ -19,7 +19,9 @@
 #include <thread>
 #include <chrono>
 
-// ASCII rocket art
+const int ROWS = 40;    // Height of screen (lines)
+const int COLS = 60;    // Width of screen
+const int HEIGHT = 10;  // Height of ASCII rocket (lines)
 const char* ROCKET = "\
       | \n\
      / \\\n\
@@ -32,10 +34,6 @@ const char* ROCKET = "\
 /  |  |  |  \\\n\
 |,-'--|--'-.|\n\
 ";
-
-const int HEIGHT = 10; // Height of ASCII rocket (lines)
-const int ROWS = 40;   // Height of screen (lines)
-const int COLS = 60;   // Width of screen
 
 void initScreen() {
 	std::string mode = "mode con cols=" + std::to_string(COLS) + " lines=" + std::to_string(ROWS);
